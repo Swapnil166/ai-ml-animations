@@ -49,19 +49,21 @@ pip install numpy matplotlib scikit-learn  # For ML modules
 
 ### **Run Your First Animation**
 ```bash
-# Start with NLP Learning Hub
-cd NLP
-python nlp_learning_hub.py
+# Start with the Master Hub (recommended)
+python main_learning_hub.py
 
-# Or try gradient descent visualization
-cd gradient_descent
-python complete_visualization.py
+# Or explore individual modules:
+cd NLP && python nlp_learning_hub.py
+cd gradient_descent && python gradient_descent_hub.py
+cd multiple_linear_regression && python regression_hub.py
 ```
 
 ## 📁 **Repository Structure**
 
 ```
 ai-ml-animations/
+├── 🚀 main_learning_hub.py           # Master hub - start here!
+│
 ├── 📂 NLP/                           # Natural Language Processing
 │   ├── 🎬 nlp_learning_hub.py        # Interactive menu system
 │   ├── 🔤 01_tokenization_animation.py
@@ -75,6 +77,7 @@ ai-ml-animations/
 │   └── 📖 README.md
 │
 ├── 📂 gradient_descent/              # Linear Regression & Optimization
+│   ├── 🎬 gradient_descent_hub.py    # Interactive menu system
 │   ├── 🎨 visual_math_tutorial.py    # Beginner-friendly analogies
 │   ├── 🧮 math_builder.py            # Step-by-step math building
 │   ├── 🎓 learn_gradient_descent.py  # Comprehensive tutorial
@@ -83,6 +86,7 @@ ai-ml-animations/
 │   └── 📖 README.md
 │
 ├── 📂 multiple_linear_regression/    # Multi-feature Regression
+│   ├── 🎬 regression_hub.py          # Interactive menu system
 │   ├── 🌱 simple_introduction.py     # Gentle introduction
 │   ├── 🧮 theory_and_math.py         # Mathematical foundations
 │   ├── ⚖️ simple_vs_multiple.py      # Performance comparison
@@ -91,6 +95,9 @@ ai-ml-animations/
 │
 ├── 📖 README.md                      # This file
 ├── 📚 LEARNING_OVERVIEW.md           # Detailed learning guide
+├── 🤝 CONTRIBUTING.md                # Contribution guidelines
+├── ⚖️ LICENSE                        # MIT License
+├── 📋 requirements.txt               # Dependencies
 └── 🔧 .gitignore
 ```
 
@@ -192,13 +199,13 @@ Interactive menu system with 7 comprehensive animations:
 ## 🚀 **Getting Started Guide**
 
 ### **1. Choose Your Learning Style**
-- **Visual Learner**: Start with `complete_visualization.py` files
-- **Theory Focused**: Begin with `math_builder.py` and theory files
-- **Hands-on**: Jump into the interactive learning hubs
+- **Unified Experience**: Start with `main_learning_hub.py` for guided navigation
+- **Module-Specific**: Jump directly to individual learning hubs
+- **Direct Access**: Run specific animation scripts
 
 ### **2. Follow the Progression**
 ```
-Basic ML → Text Processing → Advanced NLP → Transformers
+Master Hub → Choose Module → Explore Animations → Practice & Experiment
 ```
 
 ### **3. Experiment and Modify**
